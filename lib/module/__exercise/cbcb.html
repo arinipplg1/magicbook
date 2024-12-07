@@ -1,0 +1,680 @@
+// Exercise 101
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "true"
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Konversi input menjadi boolean dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "true";
+  bool? output;
+  output = input.toLowerCase() == 'true';
+  // --- End of Answer ---
+  return output == true;
+},
+// Exercise 102
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "false"
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Konversi input menjadi boolean dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "false";
+  bool? output;
+  output = input.toLowerCase() == 'true';
+  // --- End of Answer ---
+  return output == false;
+},
+// Exercise 103
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "0"
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Konversi input menjadi boolean dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "0";
+  bool? output;
+  output = input == '1';
+  // --- End of Answer ---
+  return output == false;
+},
+// Exercise 104
+() {
+  // ? Instruksi 1: Buatlah variabel bool input dengan nilai true
+  // ? Instruksi 2: Buatlah variabel String? output;
+  // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  bool input = true;
+  String? output;
+  output = input.toString();
+  // --- End of Answer ---
+  return output == "true";
+},
+// Exercise 105
+() {
+  // ? Instruksi 1: Buatlah variabel bool input dengan nilai false
+  // ? Instruksi 2: Buatlah variabel String? output;
+  // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  bool input = false;
+  String? output;
+  output = input.toString();
+  // --- End of Answer ---
+  return output == "false";
+},
+// Exercise 106
+() {
+  // ? Instruksi 1: Buatlah variabel int input dengan nilai 42
+  // ? Instruksi 2: Buatlah variabel String? output;
+  // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  int input = 42;
+  String? output;
+  output = input.toString();
+  // --- End of Answer ---
+  return output == "42";
+},
+// Exercise 107
+() {
+  // ? Instruksi 1: Buatlah variabel double input dengan nilai 3.14
+  // ? Instruksi 2: Buatlah variabel String? output;
+  // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  double input = 3.14;
+  String? output;
+  output = input.toString();
+  // --- End of Answer ---
+  return output == "3.14";
+},
+// Exercise 108
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "9.99"
+  // ? Instruksi 2: Buatlah variabel double? output;
+  // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "9.99";
+  double? output;
+  output = double.tryParse(input);
+  // --- End of Answer ---
+  return output is double && output == 9.99;
+},
+// Exercise 109
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "3.14"
+  // ? Instruksi 2: Buatlah variabel double? output;
+  // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "3.14";
+  double? output;
+  output = double.tryParse(input);
+  // --- End of Answer ---
+  return output is double && output == 3.14;
+},
+// Exercise 110
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "5.5"
+  // ? Instruksi 2: Buatlah variabel double? output;
+  // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "5.5";
+  double? output;
+  output = double.tryParse(input);
+  // --- End of Answer ---
+  return output is double && output == 5.5;
+},
+// Exercise 111
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "true"
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Konversi input menjadi boolean dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "true";
+  bool? output;
+  output = input.toLowerCase() == 'true';
+  // --- End of Answer ---
+  return output == true;
+},
+// Exercise 112
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "false"
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Konversi input menjadi boolean dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "false";
+  bool? output;
+  output = input.toLowerCase() == 'false' ? false : null;
+  // --- End of Answer ---
+  return output is bool && output == false;
+},
+// Exercise 113
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "0"
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Konversi input menjadi boolean dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "0";
+  bool? output;
+  output = input == '0' ? false : null;
+  // --- End of Answer ---
+  return output is bool && output == false;
+},
+// Exercise 114
+() {
+  // ? Instruksi 1: Buatlah variabel bool input dengan nilai true
+  // ? Instruksi 2: Buatlah variabel String? output;
+  // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  bool input = true;
+  String output;
+  output = input.toString();
+  // --- End of Answer ---
+  return output == "true";
+},
+// Exercise 115
+() {
+  // ? Instruksi 1: Buatlah variabel bool input dengan nilai false
+  // ? Instruksi 2: Buatlah variabel String? output;
+  // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  bool input = false;
+  String output;
+  output = input.toString();
+  // --- End of Answer ---
+  return output == "false";
+},
+// Exercise 116
+() {
+  // ? Instruksi 1: Buatlah variabel int input dengan nilai 42
+  // ? Instruksi 2: Buatlah variabel String? output;
+  // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  int input = 42;
+  String output;
+  output = input.toString();
+  // --- End of Answer ---
+  return output == "42";
+},
+// Exercise 117
+() {
+  // ? Instruksi 1: Buatlah variabel double input dengan nilai 3.14
+  // ? Instruksi 2: Buatlah variabel String? output;
+  // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  double input = 3.14;
+  String output;
+  output = input.toString();
+  // --- End of Answer ---
+  return output == "3.14";
+},
+// Exercise 118
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "9.99"
+  // ? Instruksi 2: Buatlah variabel double? output;
+  // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "9.99";
+  double? output;
+  output = double.tryParse(input);
+  // --- End of Answer ---
+  return output is double && output == 9.99;
+},
+// Exercise 119
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "3.14"
+  // ? Instruksi 2: Buatlah variabel double? output;
+  // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "3.14";
+  double? output;
+  output = double.tryParse(input);
+  // --- End of Answer ---
+  return output is double && output == 3.14;
+},
+// Exercise 120
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "5.5"
+  // ? Instruksi 2: Buatlah variabel double? output;
+  // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "5.5";
+  double? output;
+  output = double.tryParse(input);
+  // --- End of Answer ---
+  return output is double && output == 5.5;
+},
+// Exercise 121
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "2023-08-09"
+  // ? Instruksi 2: Buatlah variabel DateTime? output;
+  // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "2023-08-09";
+  DateTime? output;
+  output = DateTime.parse(input);
+  // --- End of Answer ---
+  return output.year == 2023 && output.month == 8 && output.day == 9;
+},
+// Exercise 122
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "1999-12-31"
+  // ? Instruksi 2: Buatlah variabel DateTime? output;
+  // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "1999-12-31";
+  DateTime? output;
+  output = DateTime.parse(input);
+  // --- End of Answer ---
+  return output.year == 1999 && output.month == 12 && output.day == 31;
+},
+// Exercise 123
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "2022-01-15"
+  // ? Instruksi 2: Buatlah variabel DateTime? output;
+  // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "2022-01-15";
+  DateTime? output;
+  output = DateTime.parse(input);
+  // --- End of Answer ---
+  return output.year == 2022 && output.month == 1 && output.day == 15;
+},
+// Exercise 124
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "1987-05-25"
+  // ? Instruksi 2: Buatlah variabel DateTime? output;
+  // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "1987-05-25";
+  DateTime? output;
+  output = DateTime.parse(input);
+  // --- End of Answer ---
+  return output.year == 1987 && output.month == 5 && output.day == 25;
+},
+// Exercise 125
+() {
+  // ? Instruksi 1: Buatlah variabel String input dengan nilai "2025-10-01"
+  // ? Instruksi 2: Buatlah variabel DateTime? output;
+  // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  String input = "2025-10-01";
+  DateTime? output;
+  output = DateTime.parse(input);
+  // --- End of Answer ---
+  return output.year == 2025 && output.month == 10 && output.day == 1;
+},
+// Exercise 126
+() {
+  // ? Instruksi 1: Buatlah variabel List<int> input dengan nilai [1, 2, 3, 4, 5]
+  // ? Instruksi 2: Buatlah variabel List<int>? output;
+  // ? Instruksi 3: Konversi input menjadi List<int> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<int> input = [1, 2, 3, 4, 5];
+  List<int>? output;
+  output = List<int>.from(input);
+  // --- End of Answer ---
+  return output.length == 5 && output[0] == 1 && output[4] == 5;
+},
+// Exercise 127
+() {
+  // ? Instruksi 1: Buatlah variabel List<String> input dengan nilai ["apple", "banana", "cherry"]
+  // ? Instruksi 2: Buatlah variabel List<String>? output;
+  // ? Instruksi 3: Konversi input menjadi List<String> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<String> input = ["apple", "banana", "cherry"];
+  List<String>? output;
+  output = List<String>.from(input);
+  // --- End of Answer ---
+  return output.length == 3 &&
+      output[0] == "apple" &&
+      output[2] == "cherry";
+},
+// Exercise 128
+() {
+  // ? Instruksi 1: Buatlah variabel List<double> input dengan nilai [3.14, 2.71, 1.618]
+  // ? Instruksi 2: Buatlah variabel List<double>? output;
+  // ? Instruksi 3: Konversi input menjadi List<double> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<double> input = [3.14, 2.71, 1.618];
+  List<double>? output;
+  output = List<double>.from(input);
+  // --- End of Answer ---
+  return output.length == 3 && output[0] == 3.14 && output[2] == 1.618;
+},
+// Exercise 129
+() {
+  // ? Instruksi 1: Buatlah variabel Map<String, int> input dengan nilai {"apple": 2, "banana": 3, "cherry": 5}
+  // ? Instruksi 2: Buatlah variabel Map<String, int>? output;
+  // ? Instruksi 3: Konversi input menjadi Map<String, int> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  Map<String, int> input = {"apple": 2, "banana": 3, "cherry": 5};
+  Map<String, int>? output;
+  output = Map<String, int>.from(input);
+  // --- End of Answer ---
+  return output.length == 3 &&
+      output["apple"] == 2 &&
+      output["cherry"] == 5;
+},
+// Exercise 130
+() {
+  // ? Instruksi 1: Buatlah variabel Map<String, double> input dengan nilai {"pi": 3.14, "e": 2.71, "phi": 1.618}
+  // ? Instruksi 2: Buatlah variabel Map<String, double>? output;
+  // ? Instruksi 3: Konversi input menjadi Map<String, double> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  Map<String, double> input = {"pi": 3.14, "e": 2.71, "phi": 1.618};
+  Map<String, double>? output;
+  output = Map<String, double>.from(input);
+  // --- End of Answer ---
+  return output.length == 3 &&
+      output["pi"] == 3.14 &&
+      output["phi"] == 1.618;
+},
+// Exercise 131
+() {
+  // ? Instruksi 1: Buatlah variabel Map<String, dynamic> input dengan nilai {"name": "John", "age": 30, "isStudent": tr
+  // ? Instruksi 2: Buatlah variabel Map<String, dynamic>? output;
+  // ? Instruksi 3: Konversi input menjadi Map<String, dynamic> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  Map<String, dynamic> input = {
+    "name": "John",
+    "age": 30,
+    "isStudent": true
+  };
+  Map<String, dynamic>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 3 &&
+      output["name"] == "John" &&
+      output["isStudent"] == true;
+},
+// Exercise 132
+() {
+  // ? Instruksi 1: Buatlah variabel Map<String, dynamic> input dengan nilai {"title": "Book", "price": 20.99, "isAvaila
+  // ? Instruksi 2: Buatlah variabel Map<String, dynamic>? output;
+  // ? Instruksi 3: Konversi input menjadi Map<String, dynamic> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  Map<String, dynamic> input = {
+    "title": "Book",
+    "price": 20.99,
+    "isAvailable": false
+  };
+  Map<String, dynamic>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 3 &&
+      output["title"] == "Book" &&
+      output["price"] == 20.99;
+},
+// Exercise 133
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, int>> input dengan nilai [{"score": 90}, {"score": 85}, {"score": 
+  // ? Instruksi 2: Buatlah variabel List<Map<String, int>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, int>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, int>> input = [
+    {"score": 90},
+    {"score": 85},
+    {"score": 95}
+  ];
+  List<Map<String, int>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 3 &&
+      output[0]["score"] == 90 &&
+      output[2]["score"] == 95;
+},
+// Exercise 134
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"name": "Alice"}, {"name": "Bob"}, 
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"name": "Alice"},
+    {"name": "Bob"},
+    {"name": "Charlie"}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 3 &&
+      output[0]["name"] == "Alice" &&
+      output[2]["name"] == "Charlie";
+},
+// Exercise 135
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"city": "New York", "population": 8
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"city": "New York", "population": 8378394},
+    {"city": "Los Angeles", "population": 3990456}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 2 &&
+      output[0]["city"] == "New York" &&
+      output[1]["population"] == 3990456;
+},
+// Exercise 136
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"name": "Alice", "age": 25}, {"name
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"name": "Alice", "age": 25},
+    {"name": "Bob", "age": 30}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 2 &&
+      output[0]["name"] == "Alice" &&
+      output[1]["age"] == 30;
+},
+// Exercise 137
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"country": "USA", "capital": "Washi
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"country": "USA", "capital": "Washington, D.C."},
+    {"country": "Canada", "capital": "Ottawa"}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 2 &&
+      output[0]["country"] == "USA" &&
+      output[1]["capital"] == "Ottawa";
+},
+// Exercise 138
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"code": "A1", "value": 10}, {"code"
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"code": "A1", "value": 10},
+    {"code": "B2", "value": 20}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 2 &&
+      output[0]["code"] == "A1" &&
+      output[1]["value"] == 20;
+},
+// Exercise 139
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"item": "Apple", "price": 1.99}, {"
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"item": "Apple", "price": 1.99},
+    {"item": "Banana", "price": 0.99}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 2 &&
+      output[0]["item"] == "Apple" &&
+      output[1]["price"] == 0.99;
+},
+// Exercise 140
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"name": "Alice", "age": 25}, {"name
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"name": "Alice", "age": 25},
+    {"name": "Bob", "age": 30}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 2 &&
+      output[0]["name"] == "Alice" &&
+      output[1]["age"] == 30;
+},
+// Exercise 141
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"city": "New York", "population": 8
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"city": "New York", "population": 8378394},
+    {"city": "Los Angeles", "population": 3990456}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 2 &&
+      output[0]["city"] == "New York" &&
+      output[1]["population"] == 3990456;
+},
+// Exercise 142
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"country": "USA", "capital": "Washi
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"country": "USA", "capital": "Washington, D.C."},
+    {"country": "Canada", "capital": "Ottawa"}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 2 &&
+      output[0]["country"] == "USA" &&
+      output[1]["capital"] == "Ottawa";
+},
+// Exercise 143
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"code": "A1", "value": 10}, {"code"
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"code": "A1", "value": 10},
+    {"code": "B2", "value": 20}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 2 &&
+      output[0]["code"] == "A1" &&
+      output[1]["value"] == 20;
+},
+// Exercise 144
+() {
+  // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"item": "Apple", "price": 1.99}, {"
+  // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
+  // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
+  // >>> Tulis jawabanmu di bawah ini
+  List<Map<String, dynamic>> input = [
+    {"item": "Apple", "price": 1.99},
+    {"item": "Banana", "price": 0.99}
+  ];
+  List<Map<String, dynamic>>? output;
+  output = input;
+  // --- End of Answer ---
+  return output.length == 2 &&
+      output[0]["item"] == "Apple" &&
+      output[1]["price"] == 0.99;
+},
+// Exercise 145
+() {
+  // ? Instruksi 1: Buatlah variabel Map<String, dynamic> input dengan nilai {"name": "Alice", "age": 25}
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Gunakan operator conditional Jika input["age"] == 25, atur nilai output menjadi true
+  // >>> Tulis jawabanmu di bawah ini
+  Map<String, dynamic> input = {"name": "Alice", "age": 25};
+  bool? output;
+  output = input["age"] == 25;
+  // --- End of Answer ---
+  return output == true;
+},
+// Exercise 146
+() {
+  // ? Instruksi 1: Buatlah variabel Map<String, dynamic> input dengan nilai {"amount": 20.5, "isDiscounted": 1}
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Gunakan operator conditional Jika input["isDiscounted"] == 1, atur nilai output menjadi true
+  // >>> Tulis jawabanmu di bawah ini
+  Map<String, dynamic> input = {"amount": 20.5, "isDiscounted": 1};
+  bool? output;
+  output = input["isDiscounted"] == 1;
+  // --- End of Answer ---
+  return output == true;
+},
+// Exercise 147
+() {
+  // ? Instruksi 1: Buatlah variabel Map<String, dynamic> input dengan nilai {"isActive": "true"}
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Gunakan operator conditional Jika input["isActive"] == "true", atur nilai output menjadi true
+  // >>> Tulis jawabanmu di bawah ini
+  Map<String, dynamic> input = {"isActive": "true"};
+  bool? output;
+  output = input["isActive"] == "true";
+  // --- End of Answer ---
+  return output == true;
+},
+// Exercise 148
+() {
+  // ? Instruksi 1: Buatlah variabel Map<String, dynamic> input dengan nilai {"hasPermission": "false"}
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Gunakan operator conditional Jika input["hasPermission"] == "false", atur nilai output menjadi true
+  // >>> Tulis jawabanmu di bawah ini
+  Map<String, dynamic> input = {"hasPermission": "false"};
+  bool? output;
+  output = input["hasPermission"] == "false";
+  // --- End of Answer ---
+  return output == true;
+},
+// Exercise 149
+() {
+  // ? Instruksi 1: Buatlah variabel Map<String, dynamic> input dengan nilai {"isAvailable": "1"}
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Gunakan operator conditional Jika input["isAvailable"] == "1", atur nilai output menjadi true
+  // >>> Tulis jawabanmu di bawah ini
+  Map<String, dynamic> input = {"isAvailable": "1"};
+  bool? output;
+  output = input["isAvailable"] == "1";
+  // --- End of Answer ---
+  return output == true;
+},
+// Exercise 150
+() {
+  // ? Instruksi 1: Buatlah variabel Map<String, dynamic> input dengan nilai {"isEnabled": "0"}
+  // ? Instruksi 2: Buatlah variabel bool? output;
+  // ? Instruksi 3: Gunakan operator conditional Jika input["isEnabled"] == "0", atur nilai output menjadi true
+  // >>> Tulis jawabanmu di bawah ini
+  Map<String, dynamic> input = {"isEnabled": "0"};
+  bool? output;
+  output = input["isEnabled"] == "0";
+  // --- End of Answer ---
+  return output == true;
+},
